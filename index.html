@@ -12,13 +12,14 @@
             <a href="#home">Home</a>
             <a href="#cardapio">Cardápio</a>
             <a href="#sobre">Sobre Nós</a>
+            <a href="#sugestoes">Sugestões</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
 
     <section class="hero" id="home" style="background-image: url('images/background.jpg')">
         <div class="hero-content">
-            <h1>Bom-vindo à Alessio's</h1>
+            <h1>Bem-vindo à Alessio's</h1>
             <p>Saborosas pizzas feitas especialmente para você!</p>
             <a href="#cardapio" class="btn">Ver Cardápio</a>
         </div>
@@ -51,6 +52,47 @@
         </div>
     </section>
 
+    <!-- NOVA SEÇÃO DE SUGESTÕES -->
+    <section class="sugestoes" id="sugestoes">
+        <h2>ENVIE SUA SUGESTÃO DE PIZZA</h2>
+        <form class="form-sugestoes">
+            <div class="form-group">
+                <label for="tipo-pizza">Tipo de pizza:</label>
+                <select id="tipo-pizza" name="tipo-pizza" required>
+                    <option value="" disabled selected>Selecione um tipo</option>
+                    <option value="tradicional">Tradicional</option>
+                    <option value="especial">Especial</option>
+                    <option value="doce">Doce</option>
+                    <option value="vegetariana">Vegetariana</option>
+                    <option value="vegana">Vegana</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="descricao">Descrição da pizza:</label>
+                <textarea id="descricao" name="descricao" rows="4" required placeholder="Descreva sua pizza ideal..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Ingredientes obrigatórios:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="ingredientes" value="queijo"> Queijo</label>
+                    <label><input type="checkbox" name="ingredientes" value="tomate"> Molho de tomate</label>
+                    <label><input type="checkbox" name="ingredientes" value="pepperoni"> Pepperoni</label>
+                    <label><input type="checkbox" name="ingredientes" value="manjericao"> Manjericão</label>
+                    <label><input type="checkbox" name="ingredientes" value="azeitona"> Azeitona</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="valor">Valor sugerido (R$):</label>
+                <input type="number" id="valor" name="valor" min="20" max="100" step="0.01" placeholder="Ex: 39.90">
+            </div>
+            
+            <button type="submit" class="btn">Enviar Sugestão</button>
+        </form>
+    </section>
+
     <section class="contato" id="contato">
         <h2>Contato</h2>
         <div class="contato-info">
@@ -59,7 +101,7 @@
                 Centro, Cidade Qualquer/RJ CEP: 12345-678
             </address>
             <p><strong>Telefone:</strong> (11) 5555-5555</p>
-            <p><strong>E-mail:</strong> contacto@alessios.pizza</p>
+            <p><strong>E-mail:</strong> contato@alessios.pizza</p>
             <div class="horario">
                 <strong>Horário de Funcionamento:</strong><br>
                 Segunda a Sábado: 11h00 às 23h00<br>
